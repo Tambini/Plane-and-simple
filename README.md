@@ -9,16 +9,16 @@ I want to make a site that shows different images of differnt cities. When you c
 
 ### Desktop:
 - Landing Page
-https://imgur.com/8hgquEU
+![](https://imgur.com/8hgquEU)
 - Profile Page
-https://imgur.com/aZNPckM
+![](https://imgur.com/aZNPckM)
 
 ### Mobile
 - Landing Page
-https://imgur.com/EAd9nTj
+![](https://imgur.com/EAd9nTj)
 
 - Profile Page
-https://imgur.com/UjMZK0v
+![](https://imgur.com/UjMZK0v)
 
 
 ### MVP:
@@ -48,6 +48,7 @@ src
 
 ### Libraries:
 -React Router	
+
 -Axios
 
 ### API
