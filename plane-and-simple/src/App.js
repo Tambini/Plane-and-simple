@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
-import axios from 'axios';
+
+import ProfilePage from './components/ProfilePage';
 
 
 class App extends Component {
@@ -9,24 +10,15 @@ class App extends Component {
   }
 
 
-  componentDidMount() {
-    axios.get('https://www.triposo.com/api/20190906/location.json?id=Amsterdam&fields=all')
-      .then(result => {
-        console.log(result);
+  
+  render() {
 
-
-      })
-
+    return (
+      <div className="App">
+        <ProfilePage />
+      </div>
+    );
   }
-    render() {
-
-
-      return (
-        <div className="App">
-
-        </div>
-      );
-    }
 
 }
 
