@@ -9,7 +9,7 @@ class ProfilePage extends Component {
       image: "",
       snippit: "",
       population: "",
-      input: "Paris"
+  
 
     }
 
