@@ -6,28 +6,38 @@ class Landing extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      cities: [],  
+      cities: [],
       image: "",
     }
   }
 
   componentDidMount = async () => {
-    const response = await allCities()
-    console.log(response)
-  }
+    const citiesData = await allCities()
+    console.log(citiesData)
 
-  DisplayCities= () => {
-    
+    this.setState({
+      cities: citiesData,
+    })
   }
 
 
   render() {
+    // console.log(this.state.cities.map((city, index) => {
+    //   return city.data
+    // }))
     return (
-      <div className="profile-container">
-        <img src={this.state.image} alt="city-image" />
-      </div>
+      this.state.cities.length > 0 ?
+        <div className="profile-container">
+          {this.state.cities.map((city, index) => {
+            return (
+              <img key={index} src={city.data.results[0].images[0].sizes.original.url} />
+              // <p>{city.data.results[0].images[0]}</p>
+            )
+          })}
+        </div> :
+        <p>NOT WORKING</p>
     )
   }
 }
 
-export default ProfilePage
+export default Landing;
