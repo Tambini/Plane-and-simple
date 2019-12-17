@@ -1,8 +1,13 @@
 import React, { Component } from 'react';
 import './App.css';
 
+//custom components
 import ProfilePage from './components/ProfilePage';
 import LandingPage from './components/LandingPage';
+import Nav from './components/Nav';
+import Footer from './components/Footer'
+
+//api calls
 import { allCities } from "./services/apiHelper"
 
 
@@ -26,8 +31,10 @@ class App extends Component {
 
     return (
       <div className="App">
+        <Nav />
         <ProfilePage />
         <LandingPage />
+        <Footer />
       </div>
     );
   }
