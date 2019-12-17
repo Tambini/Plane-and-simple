@@ -9,15 +9,21 @@ I want to make a site that shows different images of differnt cities. When you c
 
 ### Desktop:
 - Landing Page
+
 <img src ="https://i.imgur.com/8hgquEU.jpg"/>
+
 - Profile Page
-<img sirc ="https://i.imgur.com/aZNPckM.jpg"/>
+
+<img src ="https://i.imgur.com/aZNPckM.jpg"/>
 
 ### Mobile
+
 - Landing Page
+
 <img src="https://i.imgur.com/UjMZK0v.jpg"> </img>
 
 - Profile Page
+
 <img src ="https://i.imgur.com/EAd9nTj.jpg"/>
 
 
