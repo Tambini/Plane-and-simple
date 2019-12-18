@@ -1,23 +1,25 @@
 
+
 .landing-container{
-  display:flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around
+/* border: solid 5px red; */
+display:flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-around
+
 }
 
-.landing-page-images{
-  max-width:30%;
+
+.city-image{
+  /* border: solid 5px green; */
+  width:90%;
+  object-fit: cover;
   margin:20px;
-  border: 2px solid black;
-
-
+  height: 400px;
 }
 
-.Nav{
-  background-color: #283F69;
-  margin:0px;
-  padding:20px;
-  color:whitesmoke;
-
+.landing-page-links{
+  border: solid 5px black;
+  width: 30%;
+  margin: 10px;
 }
