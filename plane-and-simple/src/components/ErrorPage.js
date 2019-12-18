@@ -2,6 +2,6 @@ import React from 'react';
 
 function ErrorPage() {
   <div>
-    <h1> Page not Found </h1>
+    <h1> Sorry that page never returned from a trip to the Bermuda Triangle </h1>
   </div>
 }
