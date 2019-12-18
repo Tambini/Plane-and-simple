@@ -10,9 +10,11 @@ export default function Landing(props) {
         <div className="landing-container">
           {props.cities.map((city, index) => {
             return (
-              <Link to={`/profile/${city.data.results[0].id}`}>
-                <img className="landing-page-images" key={index} src={city.data.results[0].images[0].sizes.original.url} />
-              </Link>
+              <div className = "landing-page-links">
+              <Link to={`/profile/${city.data.id}`}> 
+                <img className= "city-image" key={index} src={city.data.images[0].sizes.original.url} />
+                </Link>
+                </div>
             )
           })}
         </div>}
@@ -20,4 +22,5 @@ export default function Landing(props) {
   )
 
 }
+
 

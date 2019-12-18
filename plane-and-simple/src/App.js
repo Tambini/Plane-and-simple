@@ -4,7 +4,7 @@ import './App.css';
 //custom components
 import ProfilePage from './components/ProfilePage';
 import LandingPage from './components/LandingPage';
-import Nav from './components/Nav';
+import Header from './components/Header';
 import Footer from './components/Footer'
 
 //api calls
@@ -19,41 +19,36 @@ class App extends Component {
     this.state = {
       cities: [],
       city: "",
-      cityImage: " ",
       apiDataLoaded: false
     }
 
   }
 
-
   componentDidMount = async () => {
     const citiesData = await allCities()
+
     console.log(citiesData)
-    const cityImage = citiesData[0].data.results[0].images[1].sizes.original.url
-  
+
     this.setState({
       cities: citiesData,
       apiDataLoaded: true
     })
-
   }
 
-  displayCity = () => {
+  
 
-  }
 
-  //this.state.cities[1].data.results[0]
   render() {
-
+   
     return (
       <div className="App">
-        <Nav />
+        <Header />
         <main>
           <Route exact path="/" render={(props) =>
             <LandingPage cities={this.state.cities} />} />
-          <Route path="/profile/:city" render={(props) => {
+          <Route path="/profile/:cityId" render={(props) => {
             return this.state.apiDataLoaded ?
-              <ProfilePage cityImage={this.state.cities} />
+              <ProfilePage cities={this.state.cities} cityName={props.match.params.cityId} />
               : null
           }} />
         </main>
