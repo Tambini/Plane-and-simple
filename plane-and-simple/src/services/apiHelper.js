@@ -14,7 +14,7 @@ export const fetchData = async () => {
 
 export const allCities = async () => {
 
-  const cities = ["London", "Madrid", "Paris", "Dubai", "Amsterdam", "Sydney", "Lima", "Rio_de_Janeiro", "Barcelona", "Milan", "Melbourne"]
+  const cities = ["London", "Madrid", "Paris", "Dubai", "Amsterdam", "Sydney", "Lima", "Rio_de_Janeiro", "Barcelona", "Milan", "Melbourne", "Athens"]
 
   const cityUrls = cities.map((city) => (`${url}id=${city}&account=${accountID}&token=${apiToken}&fields=all`)
 
