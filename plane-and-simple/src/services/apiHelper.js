@@ -31,5 +31,3 @@ export const allCities = async () => {
 
   return (cityData)
 }
-
-
