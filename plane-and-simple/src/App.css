@@ -1,7 +1,6 @@
 
 
 .landing-container{
-/* border: solid 5px red; */
 display:flex;
 flex-direction: row;
 flex-wrap: wrap;
@@ -11,27 +10,33 @@ justify-content: space-around
 
 
 .city-image{
-  /* border: solid 5px green; */
   width:90%;
   object-fit: cover;
   margin:20px;
   height: 400px;
+
 }
 
 .landing-page-links{
-  border: solid 5px black;
+  border: solid 5px #383F44;
   width: 30%;
   margin: 10px;
+  overflow: hidden;
 }
 
+
+
+
 .hero-image {
-  background-image: url("./assets/hero.jpg");
+  background-image: url("./assets/hero1.jpg");
   height: 500px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
 }
+
+
 
 .hero-text {
   text-align: center;
@@ -42,4 +47,16 @@ justify-content: space-around
   color: white;
   font-size: 50px;
   text-shadow: 2px 2px black;
+}
+
+.footer{
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 30px;
+  background-color: #333A40;
+  color: white;
+  text-align: left;
+  margin-top: 10px;
+
 }

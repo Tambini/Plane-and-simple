@@ -35,8 +35,7 @@ class ProfilePage extends Component {
           <h1> Intro: {cityData.snippet} {cityData.intro} </h1>
           <h2>Climate Average-max(by month )& Average-min (by month</h2>
           <div className="weather-container" >
-
-            <div> Jan {cityData.climate.temperature.average_max.months[0]} C </div>
+            <div> Jan {cityData.climate.temperature.average_max.months[0]} C  </div>
             <div> Feb {cityData.climate.temperature.average_max.months[1]} C </div>
             <div> March {cityData.climate.temperature.average_max.months[2]} C </div>
             <div> April {cityData.climate.temperature.average_max.months[3]} C </div>
