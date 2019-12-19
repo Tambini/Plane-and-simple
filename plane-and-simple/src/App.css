@@ -1,5 +1,8 @@
 
-
+.nav{
+  display: flex;
+  flex-direction: row;
+}
 .landing-container{
 display:flex;
 flex-direction: row;
@@ -29,7 +32,7 @@ justify-content: space-around
 
 .hero-image {
   background-image: url("./assets/hero1.jpg");
-  height: 500px;
+  height: 550px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -53,10 +56,59 @@ justify-content: space-around
   right: 0;
   bottom: 0;
   left: 0;
-  padding: 30px;
-  background-color: #333A40;
-  color: white;
-  text-align: left;
+  color:#444444;
+  text-align: center;
   margin-top: 10px;
+  font-size:10px;
+  font-weight: lighter;
+  font-family: 'Gupter', serif;
+
 
 }
+
+.profile-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.profile-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.weather-container {
+  display: grid;
+  grid-template-columns: repeat(4, 106.25px);
+  grid-gap: 15px;
+  align-items: center
+}
+
+.weather-cell {
+  height: 106.25px;
+  border-radius: 3px;
+  background: #acaaaa;
+  text-align: center;
+  vertical-align: bottom;
+  font-weight: bold;
+  background-image: url("./assets/Jan.png");
+  background-size: 108px;
+  background-repeat: no-repeat;
+}
+
+
+
+.error-page{
+  background-image: url("./assets/bermudaTriangle.jpg");
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+
+.error-message{
+  color: white;
+  font-size: 50px;
+  text-shadow: 2px 2px black;
+}
+
