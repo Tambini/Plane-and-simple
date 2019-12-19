@@ -6,11 +6,13 @@ import ProfilePage from './components/ProfilePage';
 import LandingPage from './components/LandingPage';
 import Header from './components/Header';
 import Footer from './components/Footer'
+import Nav from './components/Nav';
+import ErrorPage from './components/ErrorPage';
 
 //api calls
 import { allCities } from "./services/apiHelper"
 
-import { Route, Link } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 
 class App extends Component {
   constructor(props) {
@@ -35,15 +37,17 @@ class App extends Component {
     })
   }
 
-  
+
 
 
   render() {
-   
+
     return (
       <div className="App">
-        <Header />
-        <main>
+        <Nav />
+
+        <Switch>
+
           <Route exact path="/" render={(props) =>
             <LandingPage cities={this.state.cities} />} />
           <Route path="/profile/:cityId" render={(props) => {
@@ -51,7 +55,9 @@ class App extends Component {
               <ProfilePage cities={this.state.cities} cityName={props.match.params.cityId} />
               : null
           }} />
-        </main>
+
+          <Route exact path="*" component={ErrorPage} />
+        </Switch>
         <Footer />
       </div>
     );

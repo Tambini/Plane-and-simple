@@ -3,7 +3,8 @@ import React from 'react';
 function Footer() {
   return (
     <div className="footer">
-      <h1>Created by Carolyn Tambini</h1>
+      <h2>Created by Carolyn Tambini | API:Triposo https://www.triposo.com/api/</h2>
+
     </div>
   )
 }

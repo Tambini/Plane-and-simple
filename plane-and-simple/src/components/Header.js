@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-function Nav() {
+function Header() {
   return (
     <div className="Nav">
       <div class="hero-image">
@@ -17,4 +17,4 @@ function Nav() {
   )
 }
 
-export default Nav;
+export default Header;

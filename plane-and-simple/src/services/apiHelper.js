@@ -16,13 +16,14 @@ export const allCities = async () => {
 
   // console.log(cityUrls)
 
-  const cityPromises = cityUrls.map(cityUrl =>  axios.get(cityUrl).then(result => {
+  const cityPromises = cityUrls.map(cityUrl => axios.get(cityUrl).then(result => {
     return {
       name: result.data.results[0].id,
       data: result.data.results[0],
+      fulldate: result.data,
     }
   })
-)
+  )
 
 
   const cityData = await Promise.all(cityPromises)
