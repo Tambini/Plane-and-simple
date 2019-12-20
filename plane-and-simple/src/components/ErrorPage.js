@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 function ErrorPage() {
   return (
     <div className="error-page">
-      <h1 className="error-message"> Sorry that page never returned from a trip to the Bermuda Triangle </h1>
+      <div className="error-message">  404 -Sorry that page never returned from a trip to the Bermuda Triangle </div>
 
     </div>
   )

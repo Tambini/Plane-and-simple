@@ -44,8 +44,8 @@ justify-content: space-around
 .landing-page-links:hover .hover-state{
   display:flex;
 
-  
 }
+
 .hover-state{
   position: absolute;
   left:0;
@@ -197,7 +197,7 @@ justify-content: space-around
 }
 
 .error-page{
-  background-image: url("./assets/bermudaTriangle.jpg");
+  background-image: url("./assets/bermuda.png");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100vw;
@@ -207,13 +207,27 @@ justify-content: space-around
 }
 
 .error-message{
-  color: white;
+  color: black;
   font-size: 50px;
-  text-shadow: 2px 2px black;
+  text-shadow: 2px 2px white;
   text-align: center;
   width:50%;
   margin: 0 auto;
   
+}
+.error-message.a{
+  color:white;
+  text-decoration: none;
+  font-size: 30px;
+  text-align: center;
+}
+
+.error-link{
+  color:blue;
+  text-decoration: none;
+  text-align:center;
+  font-size:25px;
+  margin: 0 auto;
 }
 
 .city-facts{

@@ -7,7 +7,7 @@ function Header() {
       <div class="hero-image">
         <div class="hero-text">
           <h1>Plane and Simple</h1>
-          <p> Where to get your next travel tips</p>
+          <p> Where to get your next travel info</p>
         </div>
       </div>
 
