@@ -20,7 +20,7 @@ export const allCities = async () => {
     return {
       name: result.data.results[0].id,
       data: result.data.results[0],
-      fulldate: result.data,
+
     }
   })
   )

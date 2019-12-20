@@ -1,8 +1,23 @@
 
-.nav{
-  display: flex;
-  flex-direction: row;
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #444444;
 }
+
+li{
+  float: left;
+  display: block;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size:30px;
+  font-family: 'Gupter', serif;
+  font-weight: bolder;
+}
+
 .landing-container{
 display:flex;
 flex-direction: row;
@@ -11,13 +26,11 @@ justify-content: space-around
 
 }
 
-
 .city-image{
   width:90%;
   object-fit: cover;
   margin:20px;
   height: 400px;
-
 }
 
 .landing-page-links{
@@ -50,6 +63,7 @@ justify-content: space-around
   color: white;
   font-size: 50px;
   text-shadow: 2px 2px black;
+  font-family: 'Gupter', serif;
 }
 
 .footer{
@@ -74,6 +88,7 @@ justify-content: space-around
 
 .profile-image {
   display: block;
+  padding: 20px;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
@@ -81,7 +96,7 @@ justify-content: space-around
 
 .weather-container {
   display: grid;
-  grid-template-columns: repeat(4, 106.25px);
+  grid-template-columns: repeat(4, 150px);
   grid-gap: 15px;
   align-items: center
 }
@@ -93,12 +108,57 @@ justify-content: space-around
   text-align: center;
   vertical-align: bottom;
   font-weight: bold;
-  background-image: url("./assets/Jan.png");
-  background-size: 108px;
+  background-image: url("./assets/jan.png");
+  background-size: cover;
   background-repeat: no-repeat;
+  font-size: 20px;
+  
 }
 
-
+.weather-cell:nth-child(2){
+  background-image: url("./assets/feb.png");
+  
+}
+.weather-cell:nth-child(3){
+  background-image: url("./assets/march.png");
+  
+}
+.weather-cell:nth-child(4){
+  background-image: url("./assets/april.png");
+  
+}
+.weather-cell:nth-child(5){
+  background-image: url("./assets/may.png");
+  
+}
+.weather-cell:nth-child(6){
+  background-image: url("./assets/june.png");
+  
+}
+.weather-cell:nth-child(7){
+  background-image: url("./assets/july.png");
+  
+}
+.weather-cell:nth-child(8){
+  background-image: url("./assets/august.png");
+  
+}
+.weather-cell:nth-child(9){
+  background-image: url("./assets/sept.png");
+  
+}
+.weather-cell:nth-child(10){
+  background-image: url("./assets/oct.png");
+  
+}
+.weather-cell:nth-child(11){
+  background-image: url("./assets/nov.png");
+  
+}
+.weather-cell:nth-child(12){
+  background-image: url("./assets/dec.png");
+  
+}
 
 .error-page{
   background-image: url("./assets/bermudaTriangle.jpg");
@@ -112,10 +172,9 @@ justify-content: space-around
   color: white;
   font-size: 50px;
   text-shadow: 2px 2px black;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+  text-align: end;
+  position:absolute;
+  
   
 }
 
