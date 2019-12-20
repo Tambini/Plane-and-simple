@@ -15,7 +15,7 @@ export default function Landing(props) {
               <div className="landing-page-links">
                 <Link to={`/profile/${city.data.id}`}>
                   <img className="city-image" key={index} src={city.data.images[0].sizes.original.url} />
-                  <div className="hover-state"> {city.data.id}</div>
+                  <div className="hover-state"> {city.data.name}</div>
                 </Link>
               </div>
             )
