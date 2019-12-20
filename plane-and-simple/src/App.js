@@ -50,7 +50,7 @@ class App extends Component {
 
           <Route exact path="/" render={(props) =>
             <LandingPage cities={this.state.cities} />} />
-          <Route path="/profile/:cityId" render={(props) => {
+          <Route exact path="/profile/:cityId" render={(props) => {
             return this.state.apiDataLoaded ?
               <ProfilePage cities={this.state.cities} cityName={props.match.params.cityId} />
               : null

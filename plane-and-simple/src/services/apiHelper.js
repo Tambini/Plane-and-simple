@@ -1,8 +1,8 @@
 import axios from 'axios';
 
 const url = "https://www.triposo.com/api/20190906/location.json?";
-const accountID = "ULDPYY8A"
-const apiToken = "7jwucw1j1gjrqjg8j67gbnu57i3zpz0u"
+const accountID = "5SHSNCQI"
+const apiToken = "7c8n31wta3rx7kzw3m2erau8chhryn3p"
 const city = ""
 
 

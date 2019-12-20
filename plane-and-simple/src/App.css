@@ -38,9 +38,27 @@ justify-content: space-around
   width: 30%;
   margin: 10px;
   overflow: hidden;
+  position: relative;
+
 }
+.landing-page-links:hover .hover-state{
+  display:flex;
 
-
+  
+}
+.hover-state{
+  position: absolute;
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
+  background:black;
+  opacity: .8;
+  color:white;
+  display:none;
+  align-items: center;
+  justify-content: center;
+}
 
 
 .hero-image {
@@ -51,7 +69,6 @@ justify-content: space-around
   background-size: cover;
   position: relative;
 }
-
 
 
 .hero-text {
@@ -70,14 +87,12 @@ justify-content: space-around
   right: 0;
   bottom: 0;
   left: 0;
-  color:#444444;
+  color:#383F44;
   text-align: center;
   margin-top: 10px;
   font-size:10px;
   font-weight: lighter;
   font-family: 'Gupter', serif;
-
-
 }
 
 .profile-container{
@@ -88,10 +103,12 @@ justify-content: space-around
 
 .profile-image {
   display: block;
-  padding: 20px;
+  padding: 30px;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
+  margin-top:25px;
+  border:5px solid #383F44;
 }
 
 .weather-container {
@@ -112,19 +129,25 @@ justify-content: space-around
   background-size: cover;
   background-repeat: no-repeat;
   font-size: 20px;
+  display:flex;
+  align-items: center;
+  line-height: 65px;
   
 }
 
 .weather-cell:nth-child(2){
   background-image: url("./assets/feb.png");
+
   
 }
 .weather-cell:nth-child(3){
   background-image: url("./assets/march.png");
+ 
   
 }
 .weather-cell:nth-child(4){
   background-image: url("./assets/april.png");
+ 
   
 }
 .weather-cell:nth-child(5){
@@ -160,21 +183,75 @@ justify-content: space-around
   
 }
 
+.weather-title{
+  font-size: 30px;
+  text-align:center;
+  color: #383F44;
+  font-family: 'Gupter', serif;
+  font-weight: bolder;
+}
+
+.weather-wrapper{
+  display: flex;
+  justify-content: center;
+}
+
 .error-page{
   background-image: url("./assets/bermudaTriangle.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100vw;
   height: 100vh;
+  display:flex;
+  align-items: center;
 }
 
 .error-message{
   color: white;
   font-size: 50px;
   text-shadow: 2px 2px black;
-  text-align: end;
-  position:absolute;
-  
+  text-align: center;
+  width:50%;
+  margin: 0 auto;
   
 }
 
+.city-facts{
+font-size: 75px;
+font-weight: bolder;
+text-align: center;
+font-family: 'Gupter', serif;
+color:#383F44;
+margin:0px;
+
+}
+
+.country-info{
+  font-size:40px;
+  text-align:center;
+  font-family: 'Gupter',serif;
+  color:#383F44;
+  
+}
+
+.country-snippet{
+  font-size:30px;
+  text-align:center;
+  font-family: 'Gupter', serif;
+  color:#acaaaa;
+  max-width:50%;
+  margin: 0 auto;
+  
+
+}
+
+.population{
+  font-size:35px;
+  text-align:center;
+  font-family: 'Gupter',serif;
+  color:#383F44;
+}
+
+
+
+  
