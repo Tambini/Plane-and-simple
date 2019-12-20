@@ -252,6 +252,49 @@ margin:0px;
   color:#383F44;
 }
 
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px){
+
+    .hero-text{
+      font-size:30px;
+    }
+
+    .landing-page-links{
+     width: auto;
+    }
+
+    .profile-image{
+      width: 75%;
+      border:2px solid #383F44;
+    }
+
+   .country-snippet{
+     font-size:25px;
+     max-width:320px;
+   }
+   .population{
+     font-size:30px;
+   }
+   .country-info{
+     font-size:30px;
+   }
+   .city-facts{
+     font-size:50px;
+   }
+    .weather-container{
+      grid-template-columns: repeat(2, 150px);
+    }
+
+    .error-page{
+      height: calc(100vh - 140px);
+      width: initial;
+    }
+
+    .error-message{
+      font-size:30px;
+    }
+  }
 
 
   
