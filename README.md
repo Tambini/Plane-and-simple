@@ -1,4 +1,4 @@
-## Title of project:  Keep it plane and simple 
+## Title of project:  Plane and simple 
 
 
 ### Description:
@@ -32,7 +32,7 @@ I want to make a site that shows different images of differnt cities. When you c
 - Footer
 - Get all images on landing page and styled nicely
 - Functionality of going to profile page
-- Profile Page loading Image and info about site
+- Profile Page loading Image and breif info about city
 
 
 ### Component Hierarchy:
@@ -40,7 +40,6 @@ I want to make a site that shows different images of differnt cities. When you c
 src
 |__ assets/
 
-      |__ fonts
       |__ images
 |__ components/
       |__ Header.js
@@ -63,5 +62,5 @@ API-https://www.triposo.com/
 
 ### Future Features:
 - Incorporate a map with pin points that you can click on for specific cities
--  Add more items in the profile, activies, close by cities, city walks, etc
+-  Add more items in the profile, activities to do in the city, close by cities, city walks, articles about the city
 
