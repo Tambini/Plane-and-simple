@@ -14,7 +14,6 @@ class ProfilePage extends Component {
     }
 
 
-
     console.log(cityData)
 
     console.log(this.props.cities)
@@ -25,8 +24,8 @@ class ProfilePage extends Component {
           <img className="profile-image" src={cityData.images[1].source_url} alt="city-image" />}
         <div className="facts-container">
           <h1 className="city-facts">City Facts</h1>
-          <h1 className="country-info"> {cityData.id} , {cityData.country_id}</h1>
-          <h1 className="population">Population: {cityData.properties[0].value.toLocaleString()}</h1>
+          <h1 className="country-info"> {cityData.name}, {cityData.country_id}</h1>
+          <h1 className="population">Population: {new Intl.NumberFormat().format(cityData.properties[0].value)}</h1>
           <h1 className="country-snippet"> {cityData.snippet} {cityData.intro} </h1>
           <div className="climate-container">
             <h2 className="weather-title">Climate </h2>
